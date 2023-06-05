@@ -1,0 +1,49 @@
+@use 'general.scss';
+@use 'typography.scss';
+
+    #header-container{
+        height: 90px;
+        display: flex;
+        align-items: center;
+    };
+
+    #main-wrapper{
+        width: 100%;
+        height: 100%;
+    };
+
+    #contenitore-logo{
+        width: 40%;
+        height: 100%;
+        img{
+        width: 70px;
+        }
+    };
+
+    #contenitore-nav{
+        height: 100%;
+        width: 60%;
+        padding-right: 50px;
+        ul{
+        display: flex;
+        li {
+            margin-left:20px;
+            font-size: small;
+            border-bottom: solid 5px rgba(0, 0, 255, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90px;
+            cursor: pointer;
+            &.active{
+            color: #0282f9;;
+            border-bottom:solid 5px #0282f9;
+            }
+        }
+
+        li:hover{
+            color: #0282f9;
+            border-bottom:solid 5px #0282f9;
+            }
+        }
+    }
