@@ -21,3 +21,11 @@ Route::get('/', function () {
     return view('home',compact('films','barraInfo'));
 });
 
+
+Route::get('/info', function () {
+
+    return view('infoFilm');
+
+});
+
+
