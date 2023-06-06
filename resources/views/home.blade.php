@@ -11,9 +11,11 @@
             @foreach ($films as $film)
                 <!-- CARD -->
                 <div id="card">
-                    <!-- CONTENITORE IMMAGINE -->
-                    <div id="imgBox"><img src="{{ $film ['thumb'] }}" alt=""></div>
-                    <div id="title">{{$film['title']}}</div>
+                    <a href="{{route('infoFilm', ['slug'=>$film['slug']])}}">
+                        <!-- CONTENITORE IMMAGINE -->
+                        <div id="imgBox"><img src="{{ $film ['thumb'] }}" alt=""></div>
+                        <div id="title">{{$film['title']}}</div>
+                    </a>
                 </div>
             @endforeach
 

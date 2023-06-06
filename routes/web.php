@@ -22,10 +22,16 @@ Route::get('/', function () {
 });
 
 
-Route::get('/info', function () {
+Route::get('/info/{slug}', function ($slug) {
 
-    return view('infoFilm');
+    $dbFilm = config('dbFilm');
 
-});
+    $filmArray = array_filter($dbFilm, fn($dbFilm) => $dbFilm['slug'] === $slug);
+
+    $film = $filmArray[array_key_first($filmArray)];
+
+    return view('infoFilm',compact('film'));
+
+})->name('infoFilm');
 
 
