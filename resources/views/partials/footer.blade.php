@@ -1,5 +1,5 @@
 <footer>
-    <div id="main-wrapper">
+    <div id="main-wrapper2">
         <!-- PRIMA SEZIONE -->
         <div id="footer-info">
         <!-- CONTENITORE LISTE -->
@@ -58,7 +58,7 @@
             </div>
         </div>
         <!-- SVG GIGANTE -->
-        <div id="svgGigante-container"><img src="../assets/img/dc-logo-bg.png" alt=""></div>
+        <div id="svgGigante-container"><img src="{{ Vite::asset ('resources/img/dc-logo-bg.png') }}" alt=""></div>
         </div>
 
         <!-- SECONDA SEZIONE -->
@@ -71,11 +71,11 @@
             <!-- FOLLOW -->
             <div id="follow-icon-container">
             <div id="follow-us-container"><h3 id="follow-us">FOLLOW US</h3></div>
-            <div><img class="icon" src="../assets/img/footer-facebook.png" alt=""></div>
-            <div><img class="icon" src="../assets/img/footer-twitter.png" alt=""></div>
-            <div><img class="icon" src="../assets/img/footer-youtube.png" alt=""></div>
-            <div><img class="icon" src="../assets/img/footer-pinterest.png" alt=""></div>
-            <div><img class="icon" src="../assets/img/footer-periscope.png" alt=""></div>
+            <div><img class="icon" src="{{ Vite::asset ('resources/img/footer-facebook.png') }}" alt=""></div>
+            <div><img class="icon" src="{{ Vite::asset ('resources/img/footer-twitter.png') }}" alt=""></div>
+            <div><img class="icon" src="{{ Vite::asset ('resources/img/footer-youtube.png') }}" alt=""></div>
+            <div><img class="icon" src="{{ Vite::asset ('resources/img/footer-pinterest.png') }}" alt=""></div>
+            <div><img class="icon" src="{{ Vite::asset ('resources/img/footer-periscope.png') }}" alt=""></div>
             </div>
         </div>
         </div>

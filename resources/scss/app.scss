@@ -1,11 +1,15 @@
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
 
 @import '@fontsource/roboto/index.css';
 
-@import './general/general.scss';
+@import 'general/general';
 
-@import './general/typography.scss';
+@import 'general/typography';
 
-@import './general/header.scss';
+@import 'general/header';
 
-@import './general/footer.scss';
+@import 'general/footer';
+
+@import 'general/home';
+
+@import 'general/jumbotron';

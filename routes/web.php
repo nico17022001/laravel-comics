@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/', function () {
+    $films = config('dbFilm');
+
+    $barraInfo = config('dbBarraInfo');
+
+    return view('home',compact('films','barraInfo'));
 });
 

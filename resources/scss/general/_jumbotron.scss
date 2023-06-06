@@ -1,0 +1,22 @@
+#jumbotron{
+    background-image: url('/resources/img/jumbotron.jpg');
+    min-height: 300px;
+    background-size: cover;
+    position: relative;
+}
+
+#currentSeries{
+    background-color: #0282f9;
+    width: 180px;
+    height: 50px;
+    padding: 2px 4px 2px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -25px;
+    left: 210px;
+    color: white;
+    font-size: large;
+    z-index: 10;
+}
